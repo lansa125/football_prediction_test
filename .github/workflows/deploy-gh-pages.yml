@@ -23,7 +23,7 @@ jobs:
       - name: Build (set BASE_PATH for GitHub Pages project)
         run: npm run build
         env:
-          BASE_PATH: /FootballPredictionAI/
+          BASE_PATH: /football_prediction_test/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
