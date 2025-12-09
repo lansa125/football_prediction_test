@@ -5,7 +5,7 @@ export default function TelegramCTA() {
 
   const handleJoinTelegram = () => {
     // Replace with your actual Telegram group link
-    window.open('https://t.me/your_group_link', '_blank');
+    window.open('https://t.me/+o7rRbyKDZ_RmNTE1', '_blank');
   };
 
   return (

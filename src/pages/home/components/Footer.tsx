@@ -48,7 +48,7 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4">聯絡我們</h3>
             <div className="space-y-3">
               <a 
-                href="https://t.me/your_group_link" 
+                href="https://t.me/+o7rRbyKDZ_RmNTE1" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-gray-400 hover:text-emerald-400 transition-colors duration-300 cursor-pointer"
