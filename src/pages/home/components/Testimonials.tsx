@@ -18,8 +18,8 @@ export default function Testimonials() {
             </div>
             
             <div className="bg-white rounded-2xl p-10 shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="text-6xl font-bold text-emerald-500 mb-3">5,000+</div>
-              <div className="text-gray-600 text-lg">活躍用戶</div>
+              <div className="text-6xl font-bold text-emerald-500 mb-3">200+</div>
+              <div className="text-gray-600 text-lg">數據維度</div>
             </div>
             
             <div className="bg-white rounded-2xl p-10 shadow-lg hover:shadow-xl transition-all duration-300">

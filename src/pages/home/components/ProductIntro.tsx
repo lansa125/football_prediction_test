@@ -50,7 +50,7 @@ export default function ProductIntro() {
                 採用最先進的深度學習算法，持續優化預測準確度
               </p>
               <div className="inline-flex items-center gap-2 px-3 py-2 bg-emerald-500 rounded-lg">
-                <span className="text-white text-2xl font-bold">87.3%</span>
+                <span className="text-white text-2xl font-bold">75%</span>
                 <span className="text-white text-xs">準確率</span>
               </div>
             </div>

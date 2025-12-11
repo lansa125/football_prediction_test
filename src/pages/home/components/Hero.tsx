@@ -41,8 +41,8 @@ export default function Hero() {
           </div>
           <div className="flex items-center gap-8">
             <button onClick={() => scrollToSection('product')} className={`text-sm font-medium transition-colors cursor-pointer ${isScrolled ? 'text-gray-700 hover:text-emerald-500' : 'text-white/90 hover:text-emerald-400'}`}>產品介紹</button>
-            <button onClick={() => scrollToSection('team')} className={`text-sm font-medium transition-colors cursor-pointer ${isScrolled ? 'text-gray-700 hover:text-emerald-500' : 'text-white/90 hover:text-emerald-400'}`}>團隊成員</button>
-            <button onClick={() => scrollToSection('origin')} className={`text-sm font-medium transition-colors cursor-pointer ${isScrolled ? 'text-gray-700 hover:text-emerald-500' : 'text-white/90 hover:text-emerald-400'}`}>品牌起源</button>
+            <button onClick={() => scrollToSection('team')} className={`text-sm font-medium transition-colors cursor-pointer ${isScrolled ? 'text-gray-700 hover:text-emerald-500' : 'text-white/90 hover:text-emerald-400'}`}>專業團隊</button>
+            <button onClick={() => scrollToSection('origin')} className={`text-sm font-medium transition-colors cursor-pointer ${isScrolled ? 'text-gray-700 hover:text-emerald-500' : 'text-white/90 hover:text-emerald-400'}`}>技術演進</button>
             <button onClick={() => scrollToSection('technology')} className={`text-sm font-medium transition-colors cursor-pointer ${isScrolled ? 'text-gray-700 hover:text-emerald-500' : 'text-white/90 hover:text-emerald-400'}`}>預測技術</button>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function Hero() {
 
               {/* Subtitle */}
               <p className="text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
-                基於AI深度學習的足球賽事預測平台，準確率高達87.3%
+                基於AI深度學習的足球賽事預測平台，準確率高達75%
               </p>
 
               {/* CTA Buttons */}
@@ -91,23 +91,21 @@ export default function Hero() {
                 </button>
               </div>
             </div>
-
             {/* Right Visual - 35% */}
             <div className="lg:col-span-4">
-              <div className="relative transform lg:rotate-3 hover:rotate-0 transition-transform duration-500">
-                {/* Main Dashboard */}
-                <div className="bg-gradient-to-br from-gray-900/90 to-gray-800/90 backdrop-blur-xl rounded-2xl p-6 border border-white/10 shadow-2xl">
-                  <div className="text-emerald-400 text-sm font-semibold mb-4">實時預測數據</div>
-                  
+              <div className="relative transform lg:rotate-3 hover:rotate-0 transition-transform duration-500 max-w-xs">
+              {/* Main Dashboard */}
+              <div className="bg-gradient-to-br from-gray-900/90 to-gray-800/90 backdrop-blur-xl rounded-2xl p-6 border border-white/10 shadow-2xl">
+                <div className="text-emerald-400 text-sm font-semibold mb-4">實時預測數據</div>
                   {/* Win Rate Circle */}
                   <div className="flex justify-center mb-6">
                     <div className="relative w-32 h-32">
                       <svg className="transform -rotate-90 w-32 h-32">
                         <circle cx="64" cy="64" r="56" stroke="#1f2937" strokeWidth="8" fill="none" />
-                        <circle cx="64" cy="64" r="56" stroke="#10b981" strokeWidth="8" fill="none" strokeDasharray="351.86" strokeDashoffset="44" strokeLinecap="round" />
+                        <circle cx="64" cy="64" r="56" stroke="#10b981" strokeWidth="8" fill="none" strokeDasharray="351.86" strokeDashoffset="90" strokeLinecap="round" />
                       </svg>
                       <div className="absolute inset-0 flex items-center justify-center flex-col">
-                        <span className="text-3xl font-bold text-white">87.3%</span>
+                        <span className="text-3xl font-bold text-white">75%</span>
                         <span className="text-xs text-gray-400">準確率</span>
                       </div>
                     </div>
@@ -126,23 +124,23 @@ export default function Hero() {
                         +5.2%
                       </span>
                     </div>
-                    <div className="flex justify-between items-center">
+                    {/* <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-400">活躍用戶</span>
                       <span className="text-white font-semibold">5,247</span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
                 {/* Floating Cards */}
                 <div className="absolute -top-4 -right-4 bg-emerald-500/20 backdrop-blur-md rounded-lg p-3 border border-emerald-400/30 animate-pulse">
                   <div className="text-emerald-400 text-xs font-semibold">熱門賽事</div>
-                  <div className="text-white text-sm mt-1">英超 • 今晚</div>
+                  <div className="text-white text-sm mt-1">最新分析</div>
                 </div>
                 
-                <div className="absolute -bottom-4 -left-4 bg-blue-500/20 backdrop-blur-md rounded-lg p-3 border border-blue-400/30">
+                {/* <div className="absolute -bottom-4 -left-4 bg-blue-500/20 backdrop-blur-md rounded-lg p-3 border border-blue-400/30">
                   <div className="text-blue-400 text-xs font-semibold">最新分析</div>
                   <div className="text-white text-sm mt-1">15分鐘前</div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

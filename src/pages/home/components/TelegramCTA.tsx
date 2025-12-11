@@ -45,11 +45,11 @@ export default function TelegramCTA() {
 
           {/* Subtitle with Stats */}
           <div className="flex flex-wrap justify-center items-center gap-6 mb-12 text-white/90 text-lg">
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <i className="ri-group-line text-2xl"></i>
               <span className="font-semibold">5000+會員</span>
-            </div>
-            <div className="w-1 h-1 bg-white/50 rounded-full"></div>
+            </div> */}
+            {/* <div className="w-1 h-1 bg-white/50 rounded-full"></div> */}
             <div className="flex items-center gap-2">
               <i className="ri-calendar-line text-2xl"></i>
               <span className="font-semibold">每日免費預測</span>
@@ -78,12 +78,12 @@ export default function TelegramCTA() {
           </p>
 
           {/* Online Counter */}
-          <div className="mt-12 inline-flex items-center gap-3 px-6 py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
+          {/* <div className="mt-12 inline-flex items-center gap-3 px-6 py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
             <div className="w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></div>
             <span className="text-white font-semibold">
               目前在線：{onlineCount.toLocaleString()} 人
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -65,14 +65,14 @@ export default function Footer() {
           <p className="text-gray-500 text-sm">
             © 2025 AI足球預測. All rights reserved.
           </p>
-          <a 
+          {/* <a 
             href="https://readdy.ai/?origin=logo" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-emerald-400 text-sm transition-colors duration-300 cursor-pointer"
           >
             Powered by Readdy
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>

@@ -77,7 +77,7 @@ export default function Technology() {
             <div className="text-gray-400">數據維度</div>
           </div>
           <div className="text-center">
-            <div className="text-5xl font-bold text-emerald-400 mb-2">87.3%</div>
+            <div className="text-5xl font-bold text-emerald-400 mb-2">75%</div>
             <div className="text-gray-400">預測準確率</div>
           </div>
           <div className="text-center">
