@@ -1,3 +1,4 @@
+import footballStadium from '/public/images/football-stadium.jpg?url';
 import { useState, useEffect } from 'react';
 
 export default function Hero() {
@@ -23,7 +24,7 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://readdy.ai/api/search-image?query=aerial%20view%20of%20modern%20football%20stadium%20at%20night%20with%20dramatic%20lighting%2C%20dark%20blue%20and%20green%20color%20scheme%2C%20professional%20sports%20photography%2C%20cinematic%20atmosphere%2C%20high%20contrast%20lighting%20creating%20dynamic%20shadows%20across%20the%20field&width=1920&height=1080&seq=hero-bg-001&orientation=landscape"
+          src={footballStadium}
           alt="Football Stadium"
           className="w-full h-full object-cover object-top"
         />

@@ -1,3 +1,6 @@
+import aiEngineImg from '/public/images/ai-engine.jpg?url';
+import realTimeImg from '/public/images/real-time-updates.jpg?url';
+
 export default function ProductIntro() {
   return (
     <section id="product" className="py-24 bg-gray-50">
@@ -31,7 +34,7 @@ export default function ProductIntro() {
           {/* Card 2 - AI Engine */}
           <div className="relative rounded-2xl overflow-hidden group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <img
-              src="https://readdy.ai/api/search-image?query=futuristic%20AI%20neural%20network%20visualization%20with%20glowing%20green%20nodes%20and%20connections%2C%20dark%20background%2C%20technology%20concept%20art%2C%20digital%20brain%20processing%20data%2C%20cyberpunk%20style%20with%20emerald%20accents&width=600&height=800&seq=ai-engine-001&orientation=portrait"
+              src={aiEngineImg}
               alt="AI Engine"
               className="w-full h-full object-cover object-top"
             />
@@ -66,7 +69,7 @@ export default function ProductIntro() {
             </p>
             <div className="relative">
               <img
-                src="https://readdy.ai/api/search-image?query=abstract%20data%20stream%20visualization%20with%20flowing%20green%20particles%20and%20real-time%20updates%2C%20minimalist%20tech%20illustration%2C%20clean%20white%20background%2C%20modern%20digital%20interface%20showing%20live%20data%20flow&width=600&height=400&seq=realtime-001&orientation=landscape"
+                src={realTimeImg}
                 alt="Real-time Updates"
                 className="w-full h-48 object-cover object-top rounded-xl"
               />
