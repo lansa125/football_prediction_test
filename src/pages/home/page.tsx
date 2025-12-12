@@ -1,23 +1,24 @@
-import { useState } from 'react';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import ProductIntro from './components/ProductIntro';
-import Team from './components/Team';
-import Origin from './components/Origin';
-import Technology from './components/Technology';
-import TelegramCTA from './components/TelegramCTA';
+import About from './components/About';
+import Benefits from './components/Benefits';
+import HowItWorks from './components/HowItWorks';
 import Testimonials from './components/Testimonials';
+import TelegramCTA from './components/TelegramCTA';
+import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
+      <Navbar />
       <Hero />
-      <ProductIntro />
-      <Team />
-      <Origin />
-      <Technology />
-      <TelegramCTA />
+      <About />
+      <Benefits />
+      <HowItWorks />
       <Testimonials />
+      <TelegramCTA />
+      <FAQ />
       <Footer />
     </div>
   );
