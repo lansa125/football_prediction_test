@@ -1,3 +1,8 @@
+import step1Image from '/images/Works-1.webp';
+import step2Image from '/images/Works-2.webp';
+import step3Image from '/images/Works-3.webp';
+import step4Image from '/images/Works-4.webp';
+
 export default function HowItWorks() {
   const steps = [
     {
@@ -5,7 +10,7 @@ export default function HowItWorks() {
       title: '數據收集',
       description: '從官方或經授權的數據供應商獲取即時資料，涵蓋五大聯賽及主要杯賽，24/7 持續監控更新',
       icon: 'ri-cloud-line',
-      image: 'https://readdy.ai/api/search-image?query=digital%20data%20streams%20flowing%20into%20database%20server%2C%20cloud%20computing%20visualization%2C%20blue%20glowing%20data%20particles%2C%20dark%20tech%20background&width=600&height=400&seq=how-1&orientation=landscape',
+      image: step1Image,
       color: 'emerald'
     },
     {
@@ -13,7 +18,7 @@ export default function HowItWorks() {
       title: '特徵工程',
       description: '提取多個預測特徵，計算球隊攻防指數、近期狀態評分，量化主客場優勢、球員影響力',
       icon: 'ri-settings-4-line',
-      image: 'https://readdy.ai/api/search-image?query=complex%20data%20analysis%20dashboard%20with%20charts%20and%20graphs%2C%20feature%20engineering%20visualization%2C%20machine%20learning%20pipeline%2C%20dark%20interface&width=600&height=400&seq=how-2&orientation=landscape',
+      image: step2Image,
       color: 'blue'
     },
     {
@@ -21,7 +26,7 @@ export default function HowItWorks() {
       title: 'AI 模型預測',
       description: '泊松分佈預測比分、機器學習計算勝平負概率、深度神經網絡進行綜合判斷',
       icon: 'ri-brain-line',
-      image: 'https://readdy.ai/api/search-image?query=artificial%20intelligence%20brain%20neural%20network%20with%20glowing%20connections%2C%20AI%20prediction%20model%20visualization%2C%20purple%20and%20blue%20colors%2C%20futuristic&width=600&height=400&seq=how-3&orientation=landscape',
+      image: step3Image,
       color: 'purple'
     },
     {
@@ -29,7 +34,7 @@ export default function HowItWorks() {
       title: '結果推送',
       description: '生成波膽預測、提供 1X2 建議、計算信心指數，通過 Telegram 即時推送給用戶',
       icon: 'ri-send-plane-line',
-      image: 'https://readdy.ai/api/search-image?query=telegram%20message%20notification%20on%20smartphone%2C%20instant%20push%20notification%2C%20mobile%20app%20interface%2C%20dark%20background%20with%20blue%20glow&width=600&height=400&seq=how-4&orientation=landscape',
+      image: step4Image,
       color: 'cyan'
     }
   ];
@@ -64,11 +69,11 @@ export default function HowItWorks() {
         </div>
 
         {/* Timeline Steps */}
-        <div className="space-y-12 md:space-y-0">
+        <div className="md:space-y-0 flex md:flex-col overflow-x-auto gap-8 snap-x snap-mandatory scrollbar-hide pb-4 -mx-6 px-6">
           {steps.map((step, index) => (
             <div
               key={index}
-              className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 md:gap-16 mb-16 md:mb-24`}
+              className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 md:gap-16 md:mb-24 flex-shrink-0 w-[70vw] md:w-auto snap-center`}
             >
               {/* Image Side */}
               <div className="w-full md:w-1/2">

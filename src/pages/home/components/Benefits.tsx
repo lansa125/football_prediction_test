@@ -1,3 +1,8 @@
+import benefit1Image from '/images/Benefits-1.webp';
+import benefit2Image from '/images/Benefits-2.webp';
+import benefit3Image from '/images/Benefits-3.webp';
+import benefit4Image from '/images/Benefits-4.webp';
+
 export default function Benefits() {
   const benefits = [
     {
@@ -5,7 +10,7 @@ export default function Benefits() {
       title: '賽前 30 小時提醒',
       description: '大多數博彩公司在賽前 30 小時才開出完整賠率，我們在這個黃金窗口立即推送 AI 預測。',
       detail: '充足時間評估，從容決策',
-      image: 'https://readdy.ai/api/search-image?query=digital%20clock%20countdown%20timer%20with%20glowing%20neon%20numbers%2C%20futuristic%20time%20display%2C%20dark%20background%20with%20blue%20and%20green%20glow%2C%20technology%20concept&width=400&height=300&seq=benefit-1&orientation=landscape',
+      image: benefit1Image,
       gradient: 'from-emerald-500 to-teal-500'
     },
     {
@@ -13,7 +18,7 @@ export default function Benefits() {
       title: '精選五大賽事',
       description: '專注於英超、西甲、意甲、德甲、法甲五大聯賽，集中火力確保每場預測都經過充分數據驗證。',
       detail: '每週數十場高品質預測',
-      image: 'https://readdy.ai/api/search-image?query=five%20golden%20trophy%20cups%20arranged%20in%20a%20row%20with%20dramatic%20lighting%2C%20sports%20championship%20awards%2C%20dark%20elegant%20background%2C%20professional%20photography&width=400&height=300&seq=benefit-2&orientation=landscape',
+      image: benefit2Image,
       gradient: 'from-yellow-500 to-orange-500'
     },
     {
@@ -21,7 +26,7 @@ export default function Benefits() {
       title: '可靠的預測',
       description: '基於 6 個月的實測數據，AI 預測準確率達 75%，遠高於行業平均 55%。',
       detail: '信心指數高預測命中率 80%+',
-      image: 'https://readdy.ai/api/search-image?query=golden%20shield%20badge%20with%20star%20emblem%2C%20premium%20quality%20guarantee%20symbol%2C%20metallic%20texture%2C%20dark%20background%20with%20spotlight&width=400&height=300&seq=benefit-3&orientation=landscape',
+      image: benefit3Image,
       gradient: 'from-blue-500 to-purple-500'
     },
     {
@@ -29,7 +34,7 @@ export default function Benefits() {
       title: '交互式社群',
       description: 'Telegram 群組不只是單向推送，你可以與其他球迷討論預測邏輯、提出質疑、分享個人見解。',
       detail: '分析師定期回答問題',
-      image: 'https://readdy.ai/api/search-image?query=group%20of%20people%20connected%20by%20glowing%20network%20lines%2C%20digital%20community%20concept%2C%20social%20network%20visualization%2C%20dark%20tech%20background&width=400&height=300&seq=benefit-4&orientation=landscape',
+      image: benefit4Image,
       gradient: 'from-purple-500 to-pink-500'
     }
   ];
@@ -60,11 +65,11 @@ export default function Benefits() {
         </div>
 
         {/* Benefits Grid - Bento Style */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="md:grid md:grid-cols-2 md:gap-6 flex md:flex-none overflow-x-auto gap-6 snap-x snap-mandatory scrollbar-hide pb-4 -mx-6 px-6">
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="group relative bg-gray-800/50 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-700/50 hover:border-gray-600 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10"
+              className="group relative bg-gray-800/50 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-700/50 hover:border-gray-600 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10 flex-shrink-0 w-[70vw] md:w-auto snap-center"
             >
               {/* Image Section */}
               <div className="relative h-48 overflow-hidden">

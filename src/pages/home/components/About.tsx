@@ -1,3 +1,5 @@
+import aboutImage from '/images/About-1.webp';
+
 export default function About() {
   const features = [
     {
@@ -90,7 +92,7 @@ export default function About() {
             <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500/20 to-blue-500/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-2 border border-gray-700">
               <img
-                src="https://readdy.ai/api/search-image?query=futuristic%20AI%20neural%20network%20visualization%20with%20glowing%20blue%20and%20green%20data%20nodes%20connected%20by%20light%20streams%2C%20dark%20background%2C%20technology%20abstract%20art%2C%20digital%20brain%20concept%2C%20cyber%20data%20flow&width=800&height=600&seq=ai-visual-001&orientation=landscape"
+                src={aboutImage}
                 alt="AI Neural Network"
                 className="w-full h-auto rounded-2xl"
               />
@@ -127,11 +129,11 @@ export default function About() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="md:grid md:grid-cols-2 md:gap-6 flex md:flex-none overflow-x-auto gap-6 snap-x snap-mandatory scrollbar-hide pb-4 -mx-6 px-6">
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`group relative bg-gradient-to-br ${colorClasses[feature.color].bg} backdrop-blur-sm rounded-2xl p-8 border ${colorClasses[feature.color].border} transition-all duration-500 hover:shadow-2xl hover:-translate-y-1`}
+              className={`group relative bg-gradient-to-br ${colorClasses[feature.color].bg} backdrop-blur-sm rounded-2xl p-8 border ${colorClasses[feature.color].border} transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 flex-shrink-0 w-[70vw] md:w-auto snap-center`}
             >
               {/* Icon */}
               <div className={`w-14 h-14 ${colorClasses[feature.color].icon} rounded-xl flex items-center justify-center mb-6`}>

@@ -64,7 +64,7 @@ export default function Footer() {
               </p>
               
               {/* Social Links */}
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <a href="https://t.me/your_group_link" target="_blank" rel="noopener noreferrer" 
                    className="w-10 h-10 bg-white/10 hover:bg-[#0088cc] rounded-xl flex items-center justify-center transition-all duration-300 group">
                   <i className="ri-telegram-fill text-lg text-gray-400 group-hover:text-white transition-colors"></i>
@@ -73,7 +73,7 @@ export default function Footer() {
                    className="w-10 h-10 bg-white/10 hover:bg-emerald-500 rounded-xl flex items-center justify-center transition-all duration-300 group">
                   <i className="ri-mail-fill text-lg text-gray-400 group-hover:text-white transition-colors"></i>
                 </a>
-              </div>
+              </div> */}
             </div>
 
             {/* Quick Links */}
@@ -133,7 +133,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <div className="text-white font-semibold">Telegram 群組</div>
-                    <div className="text-emerald-400 text-sm">5,000+ 成員</div>
+                    <div className="text-emerald-400 text-sm">活躍社群</div>
                   </div>
                 </div>
                 <p className="text-gray-400 text-sm mb-4">
@@ -165,7 +165,7 @@ export default function Footer() {
               </div>
               
               {/* Powered By */}
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <a 
                   href="https://readdy.ai/?origin=logo" 
                   target="_blank" 
@@ -175,7 +175,7 @@ export default function Footer() {
                   <i className="ri-sparkle-line"></i>
                   Powered by Readdy
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

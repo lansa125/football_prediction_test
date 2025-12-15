@@ -73,7 +73,7 @@ export default function TelegramCTA() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -137,8 +137,8 @@ export default function TelegramCTA() {
                 <i className="ri-group-line text-xl text-blue-300"></i>
               </div>
               <div className="text-left">
-                <div className="text-white font-bold">5,000+</div>
-                <div className="text-blue-200 text-xs">活躍成員</div>
+                <div className="text-white font-bold">活躍社群</div>
+                <div className="text-blue-200 text-xs">每日交流討論</div>
               </div>
             </div>
             <div className="flex items-center gap-3 px-5 py-3 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">

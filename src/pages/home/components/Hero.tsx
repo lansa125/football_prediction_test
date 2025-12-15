@@ -1,10 +1,12 @@
+import heroImage from '/images/Hero-1.webp';
+
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-screen md:min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Parallax Effect */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://readdy.ai/api/search-image?query=dramatic%20night%20football%20stadium%20aerial%20view%20with%20bright%20green%20pitch%20illuminated%20by%20floodlights%2C%20dark%20atmospheric%20sky%2C%20cinematic%20sports%20photography%2C%20professional%20stadium%20from%20above%20showing%20perfect%20grass%20patterns%20and%20goal%20posts&width=1920&height=1080&seq=hero-bg-001&orientation=landscape"
+          src={heroImage}
           alt="Football Stadium"
           className="w-full h-full object-cover object-top scale-110"
         />
@@ -38,7 +40,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         {/* Live Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/20 backdrop-blur-sm border border-emerald-500/30 rounded-full mb-8">
+        <div className="inline-flex items-center gap-1 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-emerald-500/20 backdrop-blur-sm border border-emerald-500/30 rounded-full mb-4 sm:mb-8">
           <span className="relative flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
@@ -47,13 +49,13 @@ export default function Hero() {
         </div>
 
         {/* Main Title with Gradient */}
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 leading-tight tracking-tight" style={{ fontFamily: 'Noto Sans TC, sans-serif' }}>
+        <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-white mb-4 sm:mb-6 leading-tight tracking-tight" style={{ fontFamily: 'Noto Sans TC, sans-serif' }}>
           <span className="block bg-gradient-to-r from-white via-white to-gray-300 bg-clip-text text-transparent">AI 足球預測</span>
           <span className="block bg-gradient-to-r from-emerald-400 via-emerald-300 to-cyan-400 bg-clip-text text-transparent mt-2">精準分析 · 即時推送</span>
         </h1>
 
         {/* Subtitle with Better Typography */}
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-2xl mx-auto">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-300 mb-6 sm:mb-12 leading-relaxed max-w-2xl mx-auto">
           加入 Telegram，<span className="text-emerald-400 font-semibold">每日獲取五大聯賽預測</span>
           <br className="hidden sm:block" />
           <span className="text-white font-bold">準確率高達 75%</span>
@@ -68,41 +70,42 @@ export default function Hero() {
             href="https://t.me/your_group_link"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-emerald-500 via-emerald-600 to-emerald-500 hover:from-emerald-400 hover:via-emerald-500 hover:to-emerald-400 text-white text-lg font-bold rounded-full shadow-2xl shadow-emerald-500/30 hover:shadow-emerald-500/50 hover:scale-105 transition-all duration-300 cursor-pointer whitespace-nowrap"
+            className="relative inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-gradient-to-r from-emerald-500 via-emerald-600 to-emerald-500 hover:from-emerald-400 hover:via-emerald-500 hover:to-emerald-400 text-white text-sm sm:text-base md:text-lg font-bold rounded-full shadow-2xl shadow-emerald-500/30 hover:shadow-emerald-500/50 hover:scale-105 transition-all duration-300 cursor-pointer whitespace-nowrap"
           >
-            <i className="ri-telegram-fill text-2xl"></i>
-            <span>免費加入 Telegram 群組</span>
-            <i className="ri-arrow-right-line text-xl group-hover:translate-x-1 transition-transform"></i>
+            <i className="ri-telegram-fill text-lg sm:text-xl md:text-2xl"></i>
+            <span className="hidden xs:inline">免費加入 Telegram</span>
+            <span className="xs:hidden">加入 Telegram</span>
+            <i className="ri-arrow-right-line text-base sm:text-lg md:text-xl group-hover:translate-x-1 transition-transform"></i>
           </a>
         </div>
 
         {/* Trust Metrics - Minimal */}
-        <div className="mt-16 flex flex-wrap justify-center gap-8 md:gap-16">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center">
-              <i className="ri-line-chart-line text-2xl text-emerald-400"></i>
+        <div className="mt-8 sm:mt-12 md:mt-16 flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-16">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <div className="w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 bg-emerald-500/20 rounded-lg sm:rounded-xl flex items-center justify-center">
+              <i className="ri-line-chart-line text-lg sm:text-xl md:text-2xl text-emerald-400"></i>
             </div>
             <div className="text-left">
-              <div className="text-2xl font-bold text-white">75%+</div>
-              <div className="text-sm text-gray-400">預測準確率</div>
+              <div className="text-lg sm:text-xl md:text-2xl font-bold text-white">75%+</div>
+              <div className="text-xs sm:text-sm text-gray-400">預測準確率</div>
             </div>
           </div>
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-              <i className="ri-football-line text-2xl text-blue-400"></i>
+          <div className="flex items-center gap-2 sm:gap-3">
+            <div className="w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 bg-blue-500/20 rounded-lg sm:rounded-xl flex items-center justify-center">
+              <i className="ri-football-line text-lg sm:text-xl md:text-2xl text-blue-400"></i>
             </div>
             <div className="text-left">
-              <div className="text-2xl font-bold text-white">5 大</div>
-              <div className="text-sm text-gray-400">頂級聯賽覆蓋</div>
+              <div className="text-lg sm:text-xl md:text-2xl font-bold text-white">5 大</div>
+              <div className="text-xs sm:text-sm text-gray-400">頂級聯賽覆蓋</div>
             </div>
           </div>
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
-              <i className="ri-time-line text-2xl text-purple-400"></i>
+          <div className="flex items-center gap-2 sm:gap-3">
+            <div className="w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 bg-purple-500/20 rounded-lg sm:rounded-xl flex items-center justify-center">
+              <i className="ri-time-line text-lg sm:text-xl md:text-2xl text-purple-400"></i>
             </div>
             <div className="text-left">
-              <div className="text-2xl font-bold text-white">30h</div>
-              <div className="text-sm text-gray-400">賽前提前推送</div>
+              <div className="text-lg sm:text-xl md:text-2xl font-bold text-white">30h</div>
+              <div className="text-xs sm:text-sm text-gray-400">賽前提前推送</div>
             </div>
           </div>
         </div>
